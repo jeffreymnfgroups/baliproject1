@@ -5,7 +5,6 @@ import { TiLocationArrow } from "react-icons/ti";
 import { useEffect, useState } from "react";
 
 import Button from "./Button";
-
 gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
@@ -71,7 +70,7 @@ const Hero = () => {
         className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75"
       >
         <video
-          src="videos/hero-1.mp4"
+          src="videos/hero.mp4"
           autoPlay
           loop
           muted

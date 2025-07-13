@@ -182,12 +182,15 @@ const Features = () => (
         </BentoTilt>
 
         <BentoTilt className="bento-tilt_2">
-          <video
+          <BentoCard
             src="videos/feature-5.mp4"
-            loop
-            muted
-            autoPlay
-            className="size-full object-cover object-center"
+            title={
+              <>
+                digit<b>a</b>l sports
+              </>
+            }
+            description="eSports arena and mixed reality fitness hub where gaming meets movement."
+            isComingSoon
           />
         </BentoTilt>
       </div>
