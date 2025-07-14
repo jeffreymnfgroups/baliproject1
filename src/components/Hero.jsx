@@ -67,12 +67,15 @@ const Hero = () => {
 
       {/* Coming Soon message */}
       {!loading && (
-  <div className="absolute inset-0 z-50 flex items-center justify-center pointer-events-none">
-    <div className="bg-white/80 rounded-lg px-4 py-2 shadow-md text-sm font-semibold tracking-wider text-indigo-700 border border-indigo-200 uppercase">
-      COMING SOON
-    </div>
-  </div>
-)}
+        <div className="absolute inset-0 z-50 flex items-center justify-center pointer-events-none">
+          <div
+            className="border-hsla flex w-fit cursor-default items-center gap-1 overflow-hidden rounded-full bg-white/90 px-5 py-2 text-xs uppercase text-black font-circular-web shadow-md border border-blue-100"
+            style={{ fontWeight: 600, letterSpacing: '0.1em' }}
+          >
+            <p className="relative z-20 special-font tracking-wider" style={{ color: '#007B7F' }}>coming soon</p>
+          </div>
+        </div>
+      )}
 
 
 
