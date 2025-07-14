@@ -106,11 +106,11 @@ const Experience = () => (
   <section id="experience" className="bg-black pb-20">
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
-        <p className="font-circular-web text-lg text-blue-50">
-          The Complete Experience
-        </p>
-        <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
-          From wellness retreats to luxury stays, every element is designed for flow and connection.
+      <h2 className="font-circular-web text-2xl md:text-3xl lg:text-4xl font-bold text-blue-50 mb-4">
+      The Complete Experience
+      </h2>
+      <p className="max-w-2xl font-circular-web text-lg md:text-xl text-blue-50 opacity-70 leading-relaxed">
+      From wellness retreats to luxury stays, every element is designed for flow and connection.
         </p>
       </div>
 

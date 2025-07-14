@@ -121,7 +121,7 @@ body {
 
   @font-face {
     font-family: "zentry";
-    src: url("/fonts/zentry-regular.woff2") format("woff2");
+    src: url("/fonts/AbrilFatface-Regular.woff2") format("woff2");
   }
 }
 
@@ -156,7 +156,7 @@ body {
   }
 
   .hero-heading {
-    @apply uppercase font-zentry font-black text-5xl sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem];
+    @apply uppercase font-zentry font-black text-4xl sm:right-10 sm:text-6xl md:text-8xl lg:text-[10rem];
   }
 
   .about-subtext {
@@ -187,7 +187,7 @@ body {
   }
 
   .bento-title {
-    @apply uppercase md:text-6xl text-4xl font-black font-zentry;
+    @apply uppercase md:text-5xl text-3xl font-black font-zentry;
   }
 
   .story-img-container {

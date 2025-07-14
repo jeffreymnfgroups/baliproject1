@@ -107,10 +107,10 @@ const Features = () => (
   <section id="zones" className="bg-black pb-52">
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
-        <p className="font-circular-web text-lg text-blue-50">
+        <h2 className="font-circular-web text-2xl md:text-3xl lg:text-4xl font-bold text-blue-50 mb-4">
           Explore the Zones
-        </p>
-        <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
+        </h2>
+        <p className="max-w-2xl font-circular-web text-lg md:text-xl text-blue-50 opacity-70 leading-relaxed">
           Immerse yourself in a world-first destination where every zone is designed for flow — between adrenaline and calm, between nature and innovation.
         </p>
       </div>

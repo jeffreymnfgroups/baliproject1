@@ -47,7 +47,7 @@ const Contact = () => {
 
           <AnimatedTitle
             title="let&#39;s b<b>u</b>ild the <br /> future of <br /> s<b>p</b>orts t<b>o</b>gether."
-            className="special-font !md:text-[6.2rem] w-full font-zentry !text-5xl !font-black !leading-[.9]"
+            className="special-font !md:text-[5rem] w-full font-zentry !text-4xl !font-black !leading-[.9]"
           />
 
           <Button title="get involved" containerClass="mt-10 cursor-pointer" onClick={handleGetInvolvedClick} />
