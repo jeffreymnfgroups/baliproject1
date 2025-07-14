@@ -17,8 +17,18 @@ const Contact = () => {
 
   return (
     <div id="contact" className="my-20 min-h-96 w-screen  px-10">
-      <div className="relative rounded-lg bg-black py-24 text-blue-50 sm:overflow-hidden">
-        <div className="absolute -left-20 top-0 hidden h-full w-72 overflow-hidden sm:block lg:left-20 lg:w-100">
+      <div
+        className="relative rounded-lg py-24 text-blue-50 sm:overflow-hidden"
+        style={{
+          backgroundImage: "url('/img/about.webp')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+        {/* Overlay for readability */}
+        <div className="absolute inset-0 bg-black/70 z-0 rounded-lg" />
+        <div className="absolute -left-20 top-0 hidden h-full w-72 overflow-hidden sm:block lg:left-20 lg:w-100 z-10">
           <ImageClipBox
             src="/img/contact-1.webp"
             clipClass="contact-clip-path-1"
@@ -29,7 +39,7 @@ const Contact = () => {
           />
         </div>
 
-        <div className="absolute -top-40 left-20 w-60 sm:top-1/2 md:left-auto md:right-10 lg:top-20 lg:w-80">
+        <div className="absolute -top-40 left-20 w-60 sm:top-1/2 md:left-auto md:right-10 lg:top-20 lg:w-80 z-10">
           <ImageClipBox
             src="/img/swordman-partial.webp"
             clipClass="absolute md:scale-125"
@@ -40,7 +50,7 @@ const Contact = () => {
           />
         </div>
 
-        <div className="flex flex-col items-center text-center">
+        <div className="flex flex-col items-center text-center relative z-10">
           <p className="mb-10 font-general text-[14px] uppercase">
             Join NYALA BALI
           </p>
