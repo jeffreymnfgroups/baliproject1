@@ -116,7 +116,7 @@ const Experience = () => (
 
       <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
         <ExperienceCard
-          src="videos/feature-1.mp4"
+          src="videos/bali.mp4"
           title={
             <>
               balin<b>e</b>se cultur<b>e</b> integration
