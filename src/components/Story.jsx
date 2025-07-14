@@ -113,7 +113,7 @@ const FloatingImage = () => {
         <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
           <div className="flex h-full w-fit flex-col items-center md:items-start">
             <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
-              FLO X BALI is not your typical resort. It&apos;s a fully integrated, world-first destination designed to fuse sport, surf, wellness, lifestyle, and entertainment — all set in the heart of Bali&apos;s natural beauty.
+              NYALA BALI is a fully integrated, world-first destination designed to fuse sport, surf, wellness, lifestyle, and entertainment — all set in the heart of Bali&apos;s natural beauty.
             </p>
 
             <Button

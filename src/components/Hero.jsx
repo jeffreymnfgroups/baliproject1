@@ -65,6 +65,17 @@ const Hero = () => {
         </div>
       )}
 
+      {/* Coming Soon message */}
+      {!loading && (
+  <div className="absolute inset-0 z-50 flex items-center justify-center pointer-events-none">
+    <div className="bg-white/80 rounded-lg px-4 py-2 shadow-md text-sm font-semibold tracking-wider text-indigo-700 border border-indigo-200 uppercase">
+      COMING SOON
+    </div>
+  </div>
+)}
+
+
+
       <div
         id="video-frame"
         className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75"
@@ -79,10 +90,9 @@ const Hero = () => {
           onError={handleVideoError}
         />
 
-        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
-          <span style={{ color: '#ECA7A5' }}>FLO</span>
-          <span style={{ fontSize: '1.5em', color: '#fff', margin: '0 0.2em', verticalAlign: 'middle', fontWeight: 'bold', display: 'inline-block', lineHeight: '1' }}>X</span>
-          <b style={{ color: '#007B7F' }}>BALI</b>
+        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75 flex items-center gap-3">
+        <img src="/img/logo.png" alt="Logo" style={{ height: '1em', width: 'auto' }} />          <span style={{ color: '#ECA7A5' }}>NYALA</span>
+          <b style={{ color: '#007B7F', marginLeft: '0.2em' }}>BALI</b>
         </h1>
 
         <div className="absolute left-0 top-0 z-40 size-full">
@@ -97,7 +107,7 @@ const Hero = () => {
 
             <Button
               id="watch-trailer"
-              title="Explore FLO X BALI"
+              title="Explore NYALA BALI"
               leftIcon={<TiLocationArrow />}
               containerClass="bg-yellow-300 flex-center gap-1"
               onClick={handleExploreClick}
@@ -106,10 +116,9 @@ const Hero = () => {
         </div>
       </div>
 
-      <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">
-        <span style={{ color: '#ECA7A5' }}>FLO</span>
-        <span style={{ fontSize: '1.5em', color: '#fff', margin: '0 0.2em', verticalAlign: 'middle', fontWeight: 'bold', display: 'inline-block', lineHeight: '1' }}>X</span>
-        <b style={{ color: '#007B7F' }}>BALI</b>
+      <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black flex items-center gap-3">
+      <img src="/img/logo.png" alt="Logo" style={{ height: '1em', width: 'auto' }} />        <span style={{ color: '#ECA7A5' }}>NYALA</span>
+        <b style={{ color: '#007B7F', marginLeft: '0.2em' }}>BALI</b>
       </h1>
     </div>
   );

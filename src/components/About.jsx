@@ -30,7 +30,7 @@ const About = () => {
     <div id="about" className="min-h-screen w-screen">
       <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
         <p className="font-general text-sm uppercase md:text-[14px]">
-          Welcome to FLO X BALI
+          Welcome to NYALA BALI
         </p>
 
         <AnimatedTitle
@@ -41,18 +41,21 @@ const About = () => {
         <div className="about-subtext">
           <p>Where elite athletes, families, creatives, and travelers unite</p>
           <p className="text-gray-500">
-            FLO X BALI fuses sport, surf, wellness, lifestyle, and entertainment in the heart of Bali's natural beauty
+            NYALA BALI fuses sport, surf, wellness, lifestyle, and entertainment in the heart of Bali&apos;s natural beauty
           </p>
         </div>
       </div>
 
       <div className="h-dvh w-screen" id="clip">
-        <div className="mask-clip-path about-image">
+      <div className="mask-clip-path about-image relative">
           <img
             src="img/about.webp"
             alt="Background"
             className="absolute left-0 top-0 size-full object-cover"
           />
+          <span className="absolute right-4 bottom-4 bg-black/60 text-white text-xs px-3 py-1 rounded">
+            Concept Only
+          </span>
         </div>
       </div>
     </div>

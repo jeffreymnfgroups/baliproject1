@@ -10,9 +10,9 @@ const ImageClipBox = ({ src, clipClass }) => (
 const Contact = () => {
   const handleGetInvolvedClick = () => {
     // Open email client with pre-filled subject and body
-    const subject = encodeURIComponent("FLO X BALI - Get Involved");
-    const body = encodeURIComponent("Hi, I'm interested in getting involved with FLO X BALI. Please provide more information about opportunities.");
-    window.open(`mailto:info@floxbali.com?subject=${subject}&body=${body}`, '_blank');
+    const subject = encodeURIComponent("NYALA BALI - Get Involved");
+    const body = encodeURIComponent("Hi, I'm interested in getting involved with NYALA BALI. Please provide more information about opportunities.");
+    window.open(`mailto:info@nyalabali.com?subject=${subject}&body=${body}`, '_blank');
   };
 
   return (
@@ -42,7 +42,7 @@ const Contact = () => {
 
         <div className="flex flex-col items-center text-center">
           <p className="mb-10 font-general text-[14px] uppercase">
-            Join FLO X BALI
+            Join NYALA BALI
           </p>
 
           <AnimatedTitle
