@@ -219,7 +219,7 @@ const Features = () => (
 
         <BentoTilt className="bento-tilt_2">
           <BentoCard
-            src="videos/feature-5.mp4"
+            imgSrc="img/gaming.webp"
             title={
               <>
                 digit<b>a</b>l sports
