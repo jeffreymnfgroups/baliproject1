@@ -80,7 +80,9 @@ const Hero = () => {
         />
 
         <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
-          FLO X <b>BALI</b>
+          <span style={{ color: '#ECA7A5' }}>FLO</span>
+          <span style={{ fontSize: '1.5em', color: '#fff', margin: '0 0.2em', verticalAlign: 'middle', fontWeight: 'bold', display: 'inline-block', lineHeight: '1' }}>X</span>
+          <b style={{ color: '#007B7F' }}>BALI</b>
         </h1>
 
         <div className="absolute left-0 top-0 z-40 size-full">
@@ -105,7 +107,9 @@ const Hero = () => {
       </div>
 
       <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">
-        FLO X <b>BALI</b>
+        <span style={{ color: '#ECA7A5' }}>FLO</span>
+        <span style={{ fontSize: '1.5em', color: '#fff', margin: '0 0.2em', verticalAlign: 'middle', fontWeight: 'bold', display: 'inline-block', lineHeight: '1' }}>X</span>
+        <b style={{ color: '#007B7F' }}>BALI</b>
       </h1>
     </div>
   );
