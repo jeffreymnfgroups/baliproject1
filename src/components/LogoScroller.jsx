@@ -66,7 +66,7 @@ const LogoScroller = () => {
               <img
                 src={logo.src}
                 alt={logo.alt}
-                className="h-12 md:h-20 w-auto object-contain grayscale hover:grayscale-0 transition duration-300 drop-shadow-lg"
+                className="h-12 md:h-20 w-auto object-contain drop-shadow-lg"
                 draggable="false"
               />
             </div>
@@ -77,4 +77,4 @@ const LogoScroller = () => {
   );
 };
 
-export default LogoScroller; 
+export default LogoScroller;

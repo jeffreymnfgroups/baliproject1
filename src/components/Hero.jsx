@@ -94,8 +94,8 @@ const Hero = () => {
         />
 
         <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75 flex items-center gap-3">
-        <img src="/img/logo.png" alt="Logo" style={{ height: '1em', width: 'auto' }} />          <span style={{ color: '#ECA7A5' }}>NYALA</span>
-          <b style={{ color: '#007B7F', marginLeft: '0.2em' }}>BALI</b>
+        <img src="/img/logo.png" alt="Logo" style={{ height: '1em', width: 'auto' }} />          <span style={{ color: '#F28C28' }}>NYALA</span>
+          <b style={{ color: '#007C91', marginLeft: '0.2em' }}>BALI</b>
         </h1>
 
         <div className="absolute left-0 top-0 z-40 size-full">
@@ -120,8 +120,8 @@ const Hero = () => {
       </div>
 
       <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black flex items-center gap-3">
-      <img src="/img/logo.png" alt="Logo" style={{ height: '1em', width: 'auto' }} />        <span style={{ color: '#ECA7A5' }}>NYALA</span>
-        <b style={{ color: '#007B7F', marginLeft: '0.2em' }}>BALI</b>
+      <img src="/img/logo.png" alt="Logo" style={{ height: '1em', width: 'auto' }} />        <span style={{ color: '#F28C28' }}>NYALA</span>
+        <b style={{ color: '#007C91', marginLeft: '0.2em' }}>BALI</b>
       </h1>
     </div>
   );
