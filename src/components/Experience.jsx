@@ -38,7 +38,7 @@ export const BentoTilt = ({ children, className = "" }) => {
   );
 };
 
-export const ExperienceCard = ({ src, title, description, isComingSoon }) => {
+export const ExperienceCard = ({ src, imgSrc, title, description, isComingSoon }) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [hoverOpacity, setHoverOpacity] = useState(0);
   const hoverButtonRef = useRef(null);
@@ -62,13 +62,21 @@ export const ExperienceCard = ({ src, title, description, isComingSoon }) => {
 
   return (
     <div className="relative size-full">
-      <video
-        src={src}
-        loop
-        muted
-        autoPlay
-        className="absolute left-0 top-0 size-full object-cover object-center"
-      />
+      {imgSrc ? (
+        <img
+          src={imgSrc}
+          alt={typeof title === 'string' ? title : 'Experience image'}
+          className="absolute left-0 top-0 size-full object-cover object-center"
+        />
+      ) : (
+        <video
+          src={src}
+          loop
+          muted
+          autoPlay
+          className="absolute left-0 top-0 size-full object-cover object-center"
+        />
+      )}
       <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-50">
         <div>
           <h1 className="bento-title special-font">{title}</h1>
@@ -150,6 +158,34 @@ const Experience = () => (
               </>
             }
             description="Health-focused cafes, sportswear outlets, and local brands in our vibrant village."
+            isComingSoon
+          />
+        </BentoTilt>
+
+        {/* Extra Card 1: Cultural Balinese moments */}
+        <BentoTilt className="bento-tilt_1 md:col-span-1">
+          <ExperienceCard
+            imgSrc="img/experience-extra-1.webp"
+            title={
+              <>
+                balin<b>e</b>se culture
+              </>
+            }
+            description="Captivating moments of Balinese culture and tradition, woven into the experience."
+            isComingSoon
+          />
+        </BentoTilt>
+
+        {/* Extra Card 2: Tourist lifestyle shots */}
+        <BentoTilt className="bento-tilt_1 md:col-span-1">
+          <ExperienceCard
+            imgSrc="img/experience-extra-2.webp"
+            title={
+              <>
+                t<b>o</b>urist lifestyle
+              </>
+            }
+            description="Tourists enjoying vibrant, relaxing, and adventurous moments throughout the resort."
             isComingSoon
           />
         </BentoTilt>

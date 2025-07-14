@@ -38,7 +38,7 @@ export const BentoTilt = ({ children, className = "" }) => {
   );
 };
 
-export const BentoCard = ({ src, title, description, isComingSoon }) => {
+export const BentoCard = ({ src, imgSrc, title, description, isComingSoon }) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [hoverOpacity, setHoverOpacity] = useState(0);
   const hoverButtonRef = useRef(null);
@@ -62,13 +62,21 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
 
   return (
     <div className="relative size-full">
-      <video
-        src={src}
-        loop
-        muted
-        autoPlay
-        className="absolute left-0 top-0 size-full object-cover object-center"
-      />
+      {imgSrc ? (
+        <img
+          src={imgSrc}
+          alt={typeof title === 'string' ? title : 'Feature image'}
+          className="absolute left-0 top-0 size-full object-cover object-center"
+        />
+      ) : (
+        <video
+          src={src}
+          loop
+          muted
+          autoPlay
+          className="absolute left-0 top-0 size-full object-cover object-center"
+        />
+      )}
       <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-50">
         <div>
           <h1 className="bento-title special-font">{title}</h1>
@@ -164,6 +172,34 @@ const Features = () => (
               </>
             }
             description="Volcano-themed family water park with slides, splash zones, and cave pools."
+            isComingSoon
+          />
+        </BentoTilt>
+
+        {/* Extra Card 1: Children playing and doing sports */}
+        <BentoTilt className="bento-tilt_2">
+          <BentoCard
+            imgSrc="img/features-extra-1.webp"
+            title={
+              <>
+                kids <b>a</b>ctivity zone
+              </>
+            }
+            description="Children enjoying a variety of sports and play areas designed for all ages."
+            isComingSoon
+          />
+        </BentoTilt>
+
+        {/* Extra Card 2: Healthy cafes and restaurants */}
+        <BentoTilt className="bento-tilt_2">
+          <BentoCard
+            imgSrc="img/features-extra-2.webp"
+            title={
+              <>
+                healthy <b>c</b>afes
+              </>
+            }
+            description="Vibrant cafes and restaurants offering nutritious, delicious meals for everyone."
             isComingSoon
           />
         </BentoTilt>
