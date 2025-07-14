@@ -143,7 +143,7 @@ const Experience = () => (
 
         <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
           <ExperienceCard
-            src="videos/feature-8.mp4"
+            src="videos/food.mp4"
             title={
               <>
                 f<b>o</b>od & retail
@@ -171,7 +171,7 @@ const Experience = () => (
 
         <BentoTilt className="bento-tilt_1 md:col-span-2 md:row-span-2">
           <ExperienceCard
-            src="videos/feature-6.mp4"
+            src="videos/yoga.mp4"
             title={
               <>
                 welln<b>e</b>ss district
