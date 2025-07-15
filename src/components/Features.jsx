@@ -62,6 +62,13 @@ export const BentoCard = ({ src, imgSrc, title, description, isComingSoon }) => 
 
   return (
     <div className="relative size-full">
+      {/* Logo at top-right */}
+      <img
+        src="/img/logo.png"
+        alt="Logo"
+        className="absolute top-3 right-3 z-20"
+        style={{ height: '2.2em', width: 'auto' }}
+      />
       {imgSrc ? (
         <img
           src={imgSrc}
@@ -112,12 +119,15 @@ export const BentoCard = ({ src, imgSrc, title, description, isComingSoon }) => 
 };
 
 const Features = () => (
-  <section id="zones" className="bg-black pb-52">
+  <section id="zones" className="bg-black pb-20">
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
-        <h2 className="font-circular-web text-2xl md:text-3xl lg:text-4xl font-bold text-blue-50 mb-4">
-          Explore the Zones
-        </h2>
+        <div className="flex items-center gap-3 mb-4">
+          <h2 className="font-circular-web text-2xl md:text-3xl lg:text-4xl font-bold text-blue-50">
+            Explore the Zones
+          </h2>
+          <img src="/img/logo.png" alt="Logo" className="h-9 w-auto md:h-10" />
+        </div>
         <p className="max-w-2xl font-circular-web text-lg md:text-xl text-blue-50 opacity-70 leading-relaxed">
           Immerse yourself in a world-first destination where every zone is designed for flow — between adrenaline and calm, between nature and innovation.
         </p>
@@ -206,14 +216,29 @@ const Features = () => (
 
         <BentoTilt className="bento-tilt_2">
           <div 
-            className="flex size-full flex-col justify-between bg-violet-300 p-5 cursor-pointer"
+            className="flex size-full flex-col justify-between p-5 cursor-pointer relative overflow-hidden"
             onClick={() => alert("More zones are coming soon! Stay tuned for exciting new features.")}
           >
-            <h1 className="bento-title special-font max-w-64 text-black">
+            {/* Logo at top-right */}
+            <img
+              src="/img/logo.png"
+              alt="Logo"
+              className="absolute top-3 right-3 z-20"
+              style={{ height: '2.2em', width: 'auto' }}
+            />
+            {/* Background image */}
+            <img 
+              src="img/surfing.webp" 
+              alt="Surfing zone coming soon" 
+              className="absolute inset-0 w-full h-full object-cover object-center z-0" 
+              style={{ pointerEvents: 'none' }}
+            />
+            {/* Overlay for readability */}
+            <div className="absolute inset-0 bg-violet-300/60 z-10" />
+            <h1 className="bento-title special-font max-w-64 text-black relative z-20">
               M<b>o</b>re z<b>o</b>nes c<b>o</b>ming s<b>o</b>on.
             </h1>
-
-            <TiLocationArrow className="m-5 scale-[5] self-end" />
+            <TiLocationArrow className="m-5 scale-[5] self-end relative z-20" />
           </div>
         </BentoTilt>
 

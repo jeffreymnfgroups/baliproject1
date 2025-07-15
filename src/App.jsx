@@ -2,6 +2,7 @@ import About from "./components/About";
 import Hero from "./components/Hero";
 import NavBar from "./components/Navbar";
 import Features from "./components/Features";
+import Sustainability from "./components/Sustainability";
 import Story from "./components/Story";
 import LogoScroller from "./components/LogoScroller";
 import Contact from "./components/Contact";
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <About />
       <Features />
+      <Sustainability />
       <Experience />
       <LogoScroller />
       <Story />

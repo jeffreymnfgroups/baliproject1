@@ -110,9 +110,9 @@ const Hero = () => {
 
             <Button
               id="watch-trailer"
-              title="Explore NYALA BALI"
+              title="Worlds First"
               leftIcon={<TiLocationArrow />}
-              containerClass="bg-yellow-300 flex-center gap-1"
+              containerClass="bg-gradient-to-r from-[#F28C28] via-[#FF9A3C] to-[#007C91] flex-center gap-2 shadow-xl hover:shadow-2xl transform hover:scale-[1.02] transition-all duration-500 ease-out ring-2 ring-white/30 hover:ring-white/50 font-semibold text-white border border-white/40 hover:border-white/60 backdrop-blur-sm relative overflow-hidden group hover:from-[#FF9A3C] hover:to-[#007B7F]"
               onClick={handleExploreClick}
             />
           </div>

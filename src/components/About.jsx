@@ -29,8 +29,13 @@ const About = () => {
   return (
     <div id="about" className="min-h-screen w-screen">
       <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
+        <img
+          src="img/logo.png"
+          alt="Nyala Bali Logo"
+          className="mb-2 h-16 w-auto"
+        />
         <p className="font-general text-sm uppercase md:text-[14px]">
-          Welcome to NYALA BALI
+          NYALA BALI
         </p>
 
         <AnimatedTitle

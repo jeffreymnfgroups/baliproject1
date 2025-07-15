@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import { TiLocationArrow } from "react-icons/ti";
 
+// BentoTilt component from the first code
 export const BentoTilt = ({ children, className = "" }) => {
   const [transformStyle, setTransformStyle] = useState("");
   const itemRef = useRef(null);
@@ -38,6 +39,7 @@ export const BentoTilt = ({ children, className = "" }) => {
   );
 };
 
+// ExperienceCard component from the first code
 export const ExperienceCard = ({ src, imgSrc, title, description, isComingSoon }) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [hoverOpacity, setHoverOpacity] = useState(0);
@@ -57,7 +59,7 @@ export const ExperienceCard = ({ src, imgSrc, title, description, isComingSoon }
   const handleMouseLeave = () => setHoverOpacity(0);
 
   const handleComingSoonClick = () => {
-    alert("This experience is coming soon! Stay tuned for updates.");
+    alert("This sustainability initiative is coming soon! Stay tuned for updates.");
   };
 
   return (
@@ -72,7 +74,7 @@ export const ExperienceCard = ({ src, imgSrc, title, description, isComingSoon }
       {imgSrc ? (
         <img
           src={imgSrc}
-          alt={typeof title === 'string' ? title : 'Experience image'}
+          alt={typeof title === 'string' ? title : 'Sustainability image'}
           className="absolute left-0 top-0 size-full object-cover object-center"
         />
       ) : (
@@ -117,128 +119,102 @@ export const ExperienceCard = ({ src, imgSrc, title, description, isComingSoon }
   );
 };
 
-const Experience = () => (
-  <section id="experience" className="bg-black pb-20">
+const Sustainability = () => (
+  <section id="sustainability" className="bg-black pb-20">
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
         <div className="flex items-center gap-3 mb-4">
           <h2 className="font-circular-web text-2xl md:text-3xl lg:text-4xl font-bold text-blue-50">
-            The Complete Experience
+            Sustainability & Community Impact
           </h2>
           <img src="/img/logo.png" alt="Logo" className="h-9 w-auto md:h-10" />
         </div>
         <p className="max-w-2xl font-circular-web text-lg md:text-xl text-blue-50 opacity-70 leading-relaxed">
-          From wellness retreats to luxury stays, every element is designed for flow and connection.
+          We are committed to building a world-class, fully sustainable sports facility that creates long-term value for both the community and the environment.
         </p>
       </div>
 
-      <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
-        <ExperienceCard
-          src="videos/bali.mp4"
-          title={
-            <>
-              balin<b>e</b>se cultur<b>e</b> integration
-            </>
-          }
-          description="Local Balinese people working in hospitality, gardening, and wellness roles. Emphasizing cultural respect and sustainable job creation for the community."
-          isComingSoon
-        />
-      </BentoTilt>
-
-      <div className="grid h-[135vh] w-full grid-cols-2 grid-rows-4 gap-7">
-        <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
+      <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-3 gap-7 h-auto">
+        {/* Card 1: Large, top-left */}
+        <BentoTilt className="border-hsla rounded-md md:col-span-2 md:row-span-2 transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
           <ExperienceCard
-            src="videos/feature-7.mp4"
+            imgSrc="img/kidszone.webp"
             title={
               <>
-                acc<b>o</b>mmodation
+                youth <b>d</b>evelopment
               </>
             }
-            description="Eco-luxury bamboo villas, surf-style lodges, and treetop pods for the ultimate stay."
+            description="Dedicated programs to nurture local talent, offering scholarships and training for Olympic and SEA Games hopefuls."
             isComingSoon
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
+        {/* Card 2: Small, top-right */}
+        <BentoTilt className="border-hsla rounded-md md:col-span-1 md:row-span-1 transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
           <ExperienceCard
-            imgSrc="img/cafe.webp"
+            imgSrc="img/contract.webp"
             title={
               <>
-                f<b>o</b>od & retail
+                local <b>e</b>mployment
               </>
             }
-            description="Health-focused cafes, sportswear outlets, and local brands in our vibrant village."
+            description="Creating jobs for the community in construction, operations, hospitality, and sports training."
             isComingSoon
           />
         </BentoTilt>
 
-        {/* Extra Card 1: Cultural Balinese moments */}
-        <BentoTilt className="bento-tilt_1 md:col-span-1">
+        {/* Card 3: Tall, middle-right */}
+        <BentoTilt className="border-hsla rounded-md md:col-span-1 md:row-span-2 transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
           <ExperienceCard
-            imgSrc="img/experience-extra-1.webp"
+            imgSrc="img/solar.webp"
             title={
               <>
-                balin<b>e</b>se culture
+                100% <b>s</b>olar <b>e</b>nergy
               </>
             }
-            description="Captivating moments of Balinese culture and tradition, woven into the experience."
+            description="Facility powered entirely by renewable solar energy, reducing carbon footprint and promoting clean power."
             isComingSoon
           />
         </BentoTilt>
 
-        {/* Extra Card 2: Tourist lifestyle shots */}
-        <BentoTilt className="bento-tilt_1 md:col-span-1">
+        {/* Card 4: Recycled Seawater - now larger and with extra gap below */}
+        <BentoTilt className="border-hsla rounded-md md:col-span-2 md:row-span-1 transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
           <ExperienceCard
-            imgSrc="img/experience-extra-2.webp"
+            imgSrc="img/water.webp"
             title={
               <>
-                t<b>o</b>urist lifestyle
+                recycled <b>s</b>eawater
               </>
             }
-            description="Tourists enjoying vibrant, relaxing, and adventurous moments throughout the resort."
+            description="Innovative water systems recycle seawater for pools and irrigation, conserving fresh water resources."
             isComingSoon
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 md:col-span-1">
-          <div 
-            className="flex size-full flex-col justify-between relative cursor-pointer"
-            onClick={() => alert("Events and activations are coming soon! Stay tuned for exciting global tournaments, music festivals, and lifestyle activations.")}
-          >
-            {/* Logo at top-right */}
-            <img
-              src="/img/logo.png"
-              alt="Logo"
-              className="absolute top-3 right-3 z-20"
-              style={{ height: '2.2em', width: 'auto' }}
-            />
-            <img
-              src="img/volleyball.webp"
-              alt="Events & activations background"
-              className="absolute left-0 top-0 size-full object-cover object-center z-0 rounded-md"
-              style={{ filter: 'brightness(0.7)' }}
-            />
-            <div className="relative z-10 flex flex-col justify-between h-full p-5">
-              <h1 className="bento-title special-font max-w-64 text-white drop-shadow-md">
-                Ev<b>e</b>nts & <b>a</b>ctivations
-              </h1>
-              <p className="text-white drop-shadow-md">
-                Global tournaments, music festivals, and lifestyle activations that bring the world to Bali.
-              </p>
-              <TiLocationArrow className="m-5 scale-[5] self-end text-white drop-shadow-md" />
-            </div>
-          </div>
-        </BentoTilt>
-
-        <BentoTilt className="bento-tilt_1 md:col-span-2 md:row-span-2">
+        {/* Card 5: Wide, bottom-center */}
+        <BentoTilt className="border-hsla rounded-md md:col-span-2 md:row-span-1 transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
           <ExperienceCard
-            src="videos/yoga.mp4"
+            imgSrc="img/renewable.webp"
             title={
               <>
-                welln<b>e</b>ss district
+                eco-friendly <b>m</b>aterials
               </>
             }
-            description="Floating yoga domes, jungle spas, fire circles, and recovery spaces for complete rejuvenation."
+            description="Built using environmentally responsible materials for minimal ecological impact."
+            isComingSoon
+          />
+        </BentoTilt>
+
+        {/* Card 6: Small, bottom-right */}
+        <BentoTilt className="border-hsla rounded-md md:col-span-1 md:row-span-1 transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+          <ExperienceCard
+            imgSrc="img/event.webp"
+            title={
+              <>
+                global <b>s</b>ports <b>t</b>ourism
+              </>
+            }
+            description="Attracting international athletes, events, and visitors, making the region a hub for high-performance sport and inclusive growth."
             isComingSoon
           />
         </BentoTilt>
@@ -247,4 +223,4 @@ const Experience = () => (
   </section>
 );
 
-export default Experience; 
+export default Sustainability;
